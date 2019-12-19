@@ -22,6 +22,8 @@ end
 function _remote_hostname
   echo (whoami)
   if test -n "$SSH_CONNECTION"
+    echo "@"
+    prompt_hostname
     echo " (ssh)"
   end
 end
